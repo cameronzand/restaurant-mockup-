@@ -1,0 +1,40 @@
+.container {
+	border: 1px solid black;
+    width: 1060px;
+    min-width: 400px;
+   // margin-left: 150px;
+    height: 4280px;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.header-container {
+	border: 1px solid black;
+	width: 1060px;
+	height: 150px;
+}
+
+.hpubimage {
+	width: 100%;
+    height: 243px;
+    margin-top: 10px;
+}
+
+.logopicture {
+	height: 120px;
+}
+
+// .socialmedia {
+// 	//width: 218px;
+// 	height: 43px;
+// 	background-color: lightgrey;
+// 	//float: right;
+// }
+
+.socialmedia-logos {
+	height: 30px;
+	width: 30px;
+	position: relative;
+	float: right;
+	bottom: 58px;
+}
