@@ -1,5 +1,9 @@
+* {
+	  box-sizing: border-box;
+}
+
 .container {
-	border: 1px solid black;
+	//border: 1px solid black;
     width: 1060px;
     min-width: 400px;
    // margin-left: 150px;
@@ -9,7 +13,7 @@
 }
 
 .header-container {
-	border: 1px solid black;
+	border-bottom: 1px solid black;
 	width: 1060px;
 	height: 150px;
 }
@@ -23,7 +27,10 @@
 }
 
 .logopicture {
-	height: 120px;
+	    height: 294px;
+   
+    margin-top: -59px;
+    margin-left: -120px;
 
 }
 
@@ -39,4 +46,10 @@
 	position: relative;
 	float: right;
 	bottom: 58px;
+}
+
+.logobox {
+	height: 100px;
+	width: 100px;
+	//border: 1px solid;
 }
