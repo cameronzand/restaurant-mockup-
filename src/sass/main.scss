@@ -16,20 +16,22 @@
 
 .hpubimage {
 	width: 100%;
-    height: 243px;
+    height: 270px;
     margin-top: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .logopicture {
 	height: 120px;
+
 }
 
-// .socialmedia {
-// 	//width: 218px;
-// 	height: 43px;
-// 	background-color: lightgrey;
-// 	//float: right;
-// }
+.socialmedia {
+	margin-right: 5px;
+	position: relative;
+	top: 40px;
+ }
 
 .socialmedia-logos {
 	height: 30px;
