@@ -1,7 +1,7 @@
 import $ from 'jquery';
 console.log("loaded");
  
-
+//===============Start of Ajex Request===================================>
 
 function getItem () {
  	return $.ajax({
@@ -9,25 +9,66 @@ function getItem () {
  	
  	})	
  }
- function newsItem(items){
-  return ` <div class= "news-Box">
+
+ function specialId(){
+  return $.ajax({
+    url:"https://json-data.herokuapp.com/restaurant/special/1"
+  })
+ }
+
+ function pullMenu() {
+  return $.ajax({
+    url: "https://json-data.herokuapp.com/restaurant/menu/2"
+  })
+}
+
+ // ====================== End of API Request=========>
+//--------------------------------------------------------------------------------
+
+function newsItem(items){
+  return ` 
   				<h4>Latest News</h4>
   				<div class="news-Title">${items.title}</div>
   				<span class="date">${items.date_published}</span>
-  				 <p>${items.post}</p>
+  				 <span class= "news-post"><p>${items.post}</p></span>
   				}
   				 
 
-			</div>
+		
   `
  }
-
-
-
 getItem().then(function(data){
     console.log(data);
 	$('.news-container').append(newsItem(data));
-
 })
+//---------------------------------------------------------------------------
+// Special Items Json list
+ function specialItems ( items, id ){
+ var special = items.filter(function(entree){
+  return entree.id = id
+ });
+
+ return `<h4>${special[0].item}</h4>
+ `
+}
+
+// What is the special item of the day?
+specialId().then(function(data1){
+  // data now = { id: 1, menu-item-id: 25 }
+  var id = data1.menu_item_id;
+  pullMenu().then(function(data2){
+    // data now { appetizers: [], entrees: [], sides: [] }
+    var entrees = data2.entrees
+
+    $('.special-Box').append(specialItems(entrees,id));
+
+
+  })
+})
+ 
+
+
+
+
 
 
