@@ -56,8 +56,49 @@
 
 .news-Box {
 	height: 275px;
-	width: 350px;
+	width: 320px;
 	border: 1px solid black;
 	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 8px;
+	//display: inline-block;
+
+}
+
+.date {
+	float: right;
+    margin-top: -18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h4 {
+	border-bottom: 1px solid;
+	padding: 6px;
+}
+
+.news-Title {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.google-Box {
+	height: 275px;
+	width: 320px;
+	border: 1px solid black;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 8px;
+    float: right; 
+    clear: both;
+}
+
+.special-Box {
+	clear: both;
+
+}
+
+.our-Location {
+	border-bottom: 1px solid;
 
 }
