@@ -35,10 +35,18 @@ function newsItem(items){
   				 <span class= "news-post"><p>${items.post}</p></span>
   				}
   				 
+`}
+ // ---------------------------------------------------------------------
 
-		
-  `
- }
+function tabItems(items){
+  console.log("ITEMS: ")
+  console.log(items);
+  return `<div class=menuItems> appetizers ${items.appetizers[0].item}</div>`
+}
+pullMenu().then(function(data){
+$('.menu').append(tabItems(data));
+});
+
 getItem().then(function(data){
     console.log(data);
 	$('.news-Box').append(newsItem(data));
