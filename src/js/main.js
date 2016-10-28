@@ -18,7 +18,7 @@ function getItem () {
 
  function pullMenu() {
   return $.ajax({
-    url: "https://json-data.herokuapp.com/restaurant/menu/2"
+    url: "https://json-data.herokuapp.com/restaurant/menu/1"
   })
 }
 
@@ -39,17 +39,21 @@ function newsItem(items){
  }
 getItem().then(function(data){
     console.log(data);
-	$('.news-container').append(newsItem(data));
+	$('.news-Box').append(newsItem(data));
 })
 //---------------------------------------------------------------------------
 // Special Items Json list
  function specialItems ( items, id ){
+  console.log(items);
  var special = items.filter(function(entree){
-  return entree.id = id
+  return entree.id == id
  });
 
- return `<h4>${special[0].item}</h4>
- `
+ return `<h4>Today's Special</h4>
+ 
+ <h5>${special[0].item}</h5>
+ <div class="description">${special[0].description}`
+
 }
 
 // What is the special item of the day?
@@ -58,6 +62,7 @@ specialId().then(function(data1){
   var id = data1.menu_item_id;
   pullMenu().then(function(data2){
     // data now { appetizers: [], entrees: [], sides: [] }
+    console.log(data2);
     var entrees = data2.entrees
 
     $('.special-Box').append(specialItems(entrees,id));

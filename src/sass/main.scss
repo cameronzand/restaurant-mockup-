@@ -61,6 +61,8 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: 8px;
+	float:left;
+	margin-left: 60px;
 	//display: inline-block;
 
 }
@@ -83,18 +85,20 @@ h4 {
 }
 
 .google-Box {
-	height: 275px;
-	width: 320px;
-	border: 1px solid black;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: 8px;
-    float: right; 
-    clear: both;
+	    height: 275px;
+    width: 320px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px;
+    float: left;
 }
 
 .special-Box {
-	clear: both;
+	float: left;
+    height: 275px;
+    width: 320px;
+    border: solid 1px;
 
 }
 
