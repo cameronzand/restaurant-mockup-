@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import token from "./token";
 console.log("loaded");
  
 //===============Start of Ajex Request===================================>
@@ -21,6 +22,7 @@ function getItem () {
     url: "https://json-data.herokuapp.com/restaurant/menu/1"
   })
 }
+
 
  // ====================== End of API Request=========>
 //--------------------------------------------------------------------------------
@@ -52,7 +54,9 @@ getItem().then(function(data){
  return `<h4>Today's Special</h4>
  
  <h5>${special[0].item}</h5>
- <div class="description">${special[0].description}`
+ <span class="price">${special[0].price}</span>
+ <div class="description">${special[0].description}
+ `
 
 }
 
@@ -70,10 +74,27 @@ specialId().then(function(data1){
 
   })
 })
+
+
+$.ajax({
+  url: "https://api.imgur.com/3/album/yh0X8",
+  headers: {
+    Authorization: `Client-ID b36f3864c684de0`
+  }
+}).then(function(data){
+  console.log("AJAX DATA", data);
+})
  
 
 
+var open = ".story";
 
 
-
+$(".tab-button").click(function(event){
+  var target = event.target;
+  var className = "." + $(target).attr("id");
+  $(className).toggleClass("hidden");
+  $(open).toggleClass("hidden");
+  open = className;
+});
 
