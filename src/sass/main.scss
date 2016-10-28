@@ -61,9 +61,10 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: 8px;
-	float:left;
+	// float:left;
 	margin-left: 60px;
-	//display: inline-block;
+	display: inline-block;
+	vertical-align: top;
 
 }
 
@@ -91,18 +92,31 @@ h4 {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 8px;
-    float: left;
+    // float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .special-Box {
-	float: left;
+	// float: left;
     height: 275px;
     width: 320px;
-    border: solid 1px;
+    border: solid 1px;  
+    display: inline-block;
+    vertical-align: top;
 
 }
 
 .our-Location {
 	border-bottom: 1px solid;
 
+}
+
+.tabs-container{
+	width: 600px;
+	border: 1px solid black;
+}
+
+.hidden{
+	display:none;
 }
