@@ -41,7 +41,22 @@ function newsItem(items){
 function tabItems(items){
   console.log("ITEMS: ")
   console.log(items);
-  return `<div class=menuItems> appetizers ${items.appetizers[0].item}</div>`
+  return `<div class="appetizers">Appetizers</div> <div class=tabBox><div class=menuItems>  ${items.appetizers[0].item}</div>
+  <div class="priceItems">$${items.appetizers[0].price}</div><div class="descriptionitems">${items.appetizers[0].description} </div></div>
+
+ <div class=tabBox> <div class=menuItems>  ${items.appetizers[1].item}</div>
+  <div class="priceItems">$${items.appetizers[1].price}</div><div class="descriptionitems">${items.appetizers[1].description} </div></div>
+
+ <div class=tabBox> <div class=menuItems>  ${items.appetizers[2].item}</div>
+  <div class="priceItems">$${items.appetizers[2].price}</div><div class="descriptionitems">${items.appetizers[2].description} </div></div>
+  <div class="entrees">Entrees</div>
+
+   <div class=tabBox> <div class=menuItems>  ${items.entrees[2].item}</div>
+  <div class="priceItems">$${items.entrees[2].price}</div><div class="descriptionitems">${items.entrees[2].description} </div></div>
+
+  <div class=tabBox> <div class=menuItems>  ${items.entrees[3].item}</div>
+  <div class="priceItems">$${items.entrees[3].price}</div><div class="descriptionitems">${items.entrees[3].description} </div></div>
+ `
 }
 pullMenu().then(function(data){
 $('.menu').append(tabItems(data));
@@ -51,6 +66,14 @@ getItem().then(function(data){
     console.log(data);
 	$('.news-Box').append(newsItem(data));
 })
+// function imgPic (data){
+// console.log(data);
+// return `<div class="photos">hgh</div>`
+// }
+
+// grabPic().then(function(data){
+// $('.pictab').append(imgPic (data));
+// });
 //---------------------------------------------------------------------------
 // Special Items Json list
  function specialItems ( items, id ){
@@ -83,16 +106,22 @@ specialId().then(function(data1){
   })
 })
 
+// function grabPic(){
+// $.ajax({
+//   url: "https://api.imgur.com/3/album/yh0X8",
+//   headers: {
+//     Authorization: `Client-ID b36f3864c684de0`
+//   }
+// })
+// }
 
-$.ajax({
-  url: "https://api.imgur.com/3/album/yh0X8",
-  headers: {
-    Authorization: `Client-ID b36f3864c684de0`
-  }
-}).then(function(data){
-  console.log("AJAX DATA", data);
-})
+
+// grabPic().then(function(data){
+//   console.log("AJAX DATA", data);
+// })
  
+
+
 
 
 var open = ".story";
