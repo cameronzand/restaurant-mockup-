@@ -1,7 +1,10 @@
 * {
 	  box-sizing: border-box;
+	  margin:0px;
 }
-
+body{
+	background-image:url("./images/background.jpg")
+}
 .container {
 	//border: 1px solid black;
     width: 1060px;
@@ -10,6 +13,7 @@
     height: 4280px;
     align-items: center;
     margin: 20px auto;
+    background-image:url("./images/background.jpg")
 }
 
 .header-container {
@@ -113,11 +117,11 @@ h4 {
 }
 
 .tabs-container{
-
-	margin-top: 10px;
-	height: 1000px;
-	width: 800px;
-	border: 1px solid black;
+    height: 1000px;
+    width: 650px;
+    border: 1px solid black;
+    margin: 8px 60px;
+        padding: 25px;
 }
 
 .hidden{
@@ -125,5 +129,67 @@ h4 {
 }
 
 #story {
-	border: 1px solid black;
+	
+}
+
+.menuItems{
+	    position: relative;
+    top: 12px;
+    margin-bottom: 0px;
+    left: 5px;
+}
+
+.descriptionitems{
+
+        border: solid 1px;
+    font-size: 15px;
+    text-align: left;
+    padding: 7px;
+    line-height: 19px;
+    border: none;
+    border-bottom: solid 1px;
+    
+}
+
+.priceItems{
+       
+        position: relative;
+    left: 565px;
+    bottom: 7px;
+}
+
+.appetizers{
+        font-size: 25px;
+    margin-bottom: 15px;
+    border: none;
+    /* text-align: center; */
+    border-bottom: solid;
+
+}
+
+.tabBox{
+	   border: solid 1px;
+    margin-top: 0px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+.tab-button{
+	padding:10px 30px;
+}
+.tabs{    text-align: center;
+    /* width: 494px; */
+    width: 655px;
+    margin: 20px 0px 0px 60px;
+    padding: 12px;
+    /* margin-top: 1px; */
+    border: solid;
+}
+.story{
+	text-align:left;
+}
+.entrees{
+	font-size:25px;
 }
