@@ -393,6 +393,7 @@ p{
 
 .specialDesc {
 	font-style: italic;
+	margin-top: 5px;
 }
 
 .specialItem {
@@ -428,3 +429,14 @@ p{
     font-size: 28px;
     padding: 0px;
    }
+
+  .steak {
+  	height: 100px;
+  	width: 275px;
+  	margin-left: 10px;
+  	border: solid;
+   
+    //box-shadow: black 19px 35px 59px;
+    border-radius: 11px;
+
+  }
