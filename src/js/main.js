@@ -83,10 +83,11 @@ getItem().then(function(data){
  });
 
  return `<h4>Today's Special</h4>
- 
- <h5>${special[0].item}</h5>
+ <div class="dotted">
+ <span class="specialItem">${special[0].item}</span>
  <span class="price">${special[0].price}</span>
- <div class="description">${special[0].description}
+ </div>
+ <div class="description"><span class="specialDesc">${special[0].description}</span>
  `
 
 }
