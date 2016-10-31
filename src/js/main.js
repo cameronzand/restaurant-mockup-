@@ -66,14 +66,14 @@ getItem().then(function(data){
     console.log(data);
 	$('.news-Box').append(newsItem(data));
 })
-// function imgPic (data){
-// console.log(data);
-// return `<div class="photos">hgh</div>`
-// }
+function imgPic (data){
+console.log(data);
+return `<div class="photos">jh</div>`
+}
 
-// grabPic().then(function(data){
-// $('.pictab').append(imgPic (data));
-// });
+grabPic().then(function(data){
+$('.pictab').append(imgPic (data));
+});
 //---------------------------------------------------------------------------
 // Special Items Json list
  function specialItems ( items, id ){
@@ -106,19 +106,20 @@ specialId().then(function(data1){
   })
 })
 
-// function grabPic(){
-// $.ajax({
-//   url: "https://api.imgur.com/3/album/yh0X8",
-//   headers: {
-//     Authorization: `Client-ID b36f3864c684de0`
-//   }
-// })
-// }
+function grabPic(){
+
+return $.ajax({
+  url: "https://api.imgur.com/3/album/yh0X8",
+  headers: {
+    Authorization: `Client-ID b36f3864c684de0`
+  }
+})
+}
 
 
-// grabPic().then(function(data){
-//   console.log("AJAX DATA", data);
-// })
+grabPic().then(function(data){
+  console.log("AJAX DATA", data);
+})
  
 
 
