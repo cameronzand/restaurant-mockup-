@@ -66,7 +66,10 @@ getItem().then(function(data){
 })
 function imgPic (data){
 console.log(data);
-return `<div class="photos">jh</div>`
+return `<div class="photos">
+
+ <img src="${data.data.images[0].link}" class="pic1">
+</div>`
 }
 
 grabPic().then(function(data){
