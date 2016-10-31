@@ -75,7 +75,7 @@ return `<div class="photos">
 <img src="${data.data.images[4].link}" class="pic1"></div>
 <img src="${data.data.images[5].link}" class="pic1"></div>
 <img src="${data.data.images[6].link}" class="pic1"></div>
-<img src="${data.data.images[7].link}" class="pic1"></div>
+</div>
 
 
 `
@@ -94,10 +94,11 @@ $('.pictab').append(imgPic (data));
 
  return `<h4>Today's Special</h4>
  <div class="dotted">
+
  <span class="specialItem">${special[0].item}</span>
  <span class="price">${special[0].price}</span>
  </div>
- <div class="description"><span class="specialDesc">${special[0].description}</span>
+ <div class="description"> <div><img src="images/steak.jpg" class="steak"></div><span class="specialDesc">${special[0].description}</span>
  `
 
 }
