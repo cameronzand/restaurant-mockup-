@@ -68,8 +68,17 @@ function imgPic (data){
 console.log(data);
 return `<div class="photos">
 
- <img src="${data.data.images[0].link}" class="pic1">
-</div>`
+<img src="${data.data.images[0].link}" class="pic1"></div> 
+<img src="${data.data.images[1].link}" class="pic1"></div> 
+<img src="${data.data.images[2].link}" class="pic1"></div> 
+<img src="${data.data.images[3].link}" class="pic1"></div>
+<img src="${data.data.images[4].link}" class="pic1"></div>
+<img src="${data.data.images[5].link}" class="pic1"></div>
+<img src="${data.data.images[6].link}" class="pic1"></div>
+<img src="${data.data.images[7].link}" class="pic1"></div>
+
+
+`
 }
 
 grabPic().then(function(data){
