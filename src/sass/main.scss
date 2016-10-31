@@ -126,6 +126,17 @@ h4 {
 }
  .google-Box:hover{
 	box-shadow: black 20px 10px 50px;
+
+
+	border:solid 5px #7e1110;
+	    background: antiquewhite;
+	    -webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	transform:scale(1.5);
+	-webkit-box-shawdow:3px 3px 5px #000;
+	box-shawdow:3px 3px 5px #000;
 }
 .google-Box {
 	       height: 275px;
@@ -136,6 +147,14 @@ h4 {
     padding: 8px;
     display: inline-block;
     vertical-align: top;
+
+       vertical-align: top;
+    border-radius:30px;
+    border: 5px solid rosybrown;
+      -webkit-transition: all .5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
+    transition: all.5s ease;
 
 }
 .special-Box:hover{
@@ -165,6 +184,7 @@ h4 {
     -moz-transition: all.5s ease;
     -o-transition: all.5s ease;
     transition: all.5s ease;
+    padding: 6px;
 
 }
 
@@ -290,6 +310,7 @@ color:yellow;
 }
 .story{
 	text-align:left;
+
 }
 .entrees{
 	font-size:25px;
@@ -331,4 +352,59 @@ p{
 	-webkit-box-shawdow:3px 3px 5px #000;
 	box-shawdow:3px 3px 5px #000;
 	
+}
+
+.formButton {
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: black;
+	color: white;
+	width: 140px;
+	height: 35px;
+	border-radius: 5px;
+	border: 0px;
+	font-size: 18px;
+
+
+}
+
+.fullName {
+	width: 340px;
+}
+
+.formDate {
+	width: 240px;
+}
+
+.specialNotes {
+	width: 400px;
+	height: 100px;
+}
+
+.formBold {
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+.specialDesc {
+	font-style: italic;
+}
+
+.specialItem {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.price {
+	margin-left: 90px;
+	font-size: 12px;
+}
+
+.dotted {
+	border-bottom: 1px dotted;
+}
+
+.description {
+	margin-top: 10px;
 }
