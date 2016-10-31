@@ -52,7 +52,7 @@ body{
 }
 
 .logopicture {
-	    height: 294px;
+	height: 294px;
    
     margin-top: -59px;
     margin-left: -120px;
@@ -180,7 +180,7 @@ h4 {
     vertical-align: top;
     border-radius:30px;
     border: 5px solid rosybrown;
-      -webkit-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     -moz-transition: all.5s ease;
     -o-transition: all.5s ease;
     transition: all.5s ease;
@@ -198,10 +198,10 @@ h4 {
     width: 650px;
     border: 1px solid black;
     margin: 8px 60px;
-        padding: 25px;
-        box-shadow: black 4px 2px 15px;
+    padding: 25px;
+    box-shadow: black 4px 2px 15px;
     border-radius: 15px;
-
+    background: bisque;
 
 }
 
@@ -305,6 +305,7 @@ color:yellow;
     width: 655px;
     margin: 20px 0px 0px 60px;
     padding: 2px;
+    cursor: pointer;
     /* margin-top: 1px; */
     
 }
@@ -336,7 +337,7 @@ p{
     width: 590px;
     height: 240px;
     }
-    .news-Box {
+.news-Box {
     -webkit-transition: all .5s ease;
     -moz-transition: all.5s ease;
     -o-transition: all.5s ease;
