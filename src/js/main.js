@@ -1,6 +1,4 @@
-import $ from 'jquery';
-import token from "./token";
-console.log("loaded");
+import $ from 'jquery'; import token from "./token"; console.log("loaded");
  
 //===============Start of Ajex Request===================================>
 
