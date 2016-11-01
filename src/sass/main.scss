@@ -440,3 +440,27 @@ p{
     border-radius: 11px;
 
   }
+
+  .warn:hover {
+
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	transform:scale(1.5);
+	-webkit-box-shawdow:3px 3px 5px #000;
+	box-shawdow:3px 3px 5px #000;
+	
+}
+  .warn{
+  	width: 15px;
+  	    position: absolute;
+    right: 710px;
+      -webkit-transition: all .5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
+    transition: all.5s ease;
+
+  }
+
+

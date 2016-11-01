@@ -39,20 +39,20 @@ function newsItem(items){
 function tabItems(items){
   console.log("ITEMS: ")
   console.log(items);
-  return `<div class="appetizers">Appetizers</div> <div class=tabBox><div class=menuItems>  ${items.appetizers[0].item}</div>
+  return `<div class="appetizers">Appetizers</div><div class=tabBox><div class=menuItems>  ${items.appetizers[0].item}</div><img src="./images/Warning.png" class="warn">
   <div class="priceItems">$${items.appetizers[0].price}</div><div class="descriptionitems">${items.appetizers[0].description} </div></div>
 
- <div class=tabBox> <div class=menuItems>  ${items.appetizers[1].item}</div>
+ <div class=tabBox> <div class=menuItems>  ${items.appetizers[1].item}</div><img src="./images/Warning.png" class="warn">
   <div class="priceItems">$${items.appetizers[1].price}</div><div class="descriptionitems">${items.appetizers[1].description} </div></div>
 
- <div class=tabBox> <div class=menuItems>  ${items.appetizers[2].item}</div>
+ <div class=tabBox> <div class=menuItems>  ${items.appetizers[2].item}</div><img src="./images/Warning.png" class="warn">
   <div class="priceItems">$${items.appetizers[2].price}</div><div class="descriptionitems">${items.appetizers[2].description} </div></div>
   <div class="entrees">Entrees</div>
 
-   <div class=tabBox> <div class=menuItems>  ${items.entrees[2].item}</div>
+   <div class=tabBox> <div class=menuItems>  ${items.entrees[2].item}</div><img src="./images/Warning.png" class="warn">
   <div class="priceItems">$${items.entrees[2].price}</div><div class="descriptionitems">${items.entrees[2].description} </div></div>
 
-  <div class=tabBox> <div class=menuItems>  ${items.entrees[3].item}</div>
+  <div class=tabBox> <div class=menuItems>  ${items.entrees[3].item}</div><img src="./images/Warning.png" class="warn">
   <div class="priceItems">$${items.entrees[3].price}</div><div class="descriptionitems">${items.entrees[3].description} </div></div>
  `
 }
@@ -94,7 +94,6 @@ $('.pictab').append(imgPic (data));
 
  return `<h4>Today's Special</h4>
  <div class="dotted">
-
  <span class="specialItem">${special[0].item}</span>
  <span class="price">${special[0].price}</span>
  </div>
